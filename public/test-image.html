@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Image Path Test</h1>
+    <p>Testing if images load correctly:</p>
+    
+    <h2>Logo Test:</h2>
+    <img src="/images/new-logo.png" alt="Logo Test" style="max-width: 200px;">
+    
+    <h2>Sample Image Test:</h2>
+    <img src="/images/IMG_4907.jpg" alt="Sample Image Test" style="max-width: 200px;">
+    
+    <h2>Trainer Photo Test:</h2>
+    <img src="/images/Julien.webp" alt="Trainer Test" style="max-width: 200px;">
+    
+    <script>
+        // Test if images load
+        const images = document.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.onload = () => console.log(`Image ${index + 1} loaded successfully`);
+            img.onerror = () => console.error(`Image ${index + 1} failed to load:`, img.src);
+        });
+    </script>
+</body>
+</html>
