@@ -21,6 +21,9 @@ import IMG4709 from "@/assets/IMG_4709.jpg";
 import IMG4711 from "@/assets/IMG_4711.jpg";
 import IMG4713 from "@/assets/IMG_4713.jpg";
 import IMG4714 from "@/assets/IMG_4714.jpg";
+import IMG4769 from "@/assets/IMG_4769.jpg";
+import IMG4787 from "@/assets/IMG_4787.jpg";
+import IMG4812 from "@/assets/IMG_4812.jpg";
 
 const Pilates = () => {
   const scrollToSection = (id: string) => {
@@ -387,15 +390,14 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4639} 
+                      src={IMG4655} 
                       alt="Katrolsysteem" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Katrolsysteem</h3>
                   <p className="text-muted-foreground">
-                    Wat in wezen een glijdende kar is die zich beweegt door middel van een katrolsysteem, 
-                    is dat de Reformer een combinatie biedt van weerstand en ondersteuning voor het lichaam.
+                    Een glijdende kar die zich beweegt door middel van een katrolsysteem, wat een combinatie biedt van weerstand en ondersteuning voor het lichaam.
                   </p>
                 </CardContent>
               </Card>
@@ -404,15 +406,14 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4651} 
+                      src={IMG4769} 
                       alt="Veren" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Veren</h3>
                   <p className="text-muted-foreground">
-                    De Reformer gebruikt veren (springs) om verschillende mate van spanning en weerstand te creëren. 
-                    Dit helpt om de spieren tegelijkertijd te versterken en te verlengen.
+                    De Reformer gebruikt veren (springs) om verschillende mate van spanning en weerstand te creëren. Dit helpt om de spieren tegelijkertijd te versterken en te verlengen.
                   </p>
                 </CardContent>
               </Card>
@@ -421,15 +422,14 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4658} 
+                      src={IMG4787} 
                       alt="Posities" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Posities</h3>
                   <p className="text-muted-foreground">
-                    Werken op de Reformer geeft de meest geweldige mogelijkheden om je mobiliteit en stabiliteit 
-                    in evenwicht te brengen in allerlei verschillende posities.
+                    Werken op de Reformer geeft de meest geweldige mogelijkheden om je mobiliteit en stabiliteit in evenwicht te brengen in allerlei verschillende posities.
                   </p>
                 </CardContent>
               </Card>
@@ -463,8 +463,12 @@ const Pilates = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-48 h-48 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="h-24 w-24 text-primary" />
+                <div className="mb-6">
+                  <img 
+                    src={IMG4812} 
+                    alt="Chee-Ling Pilates instructeur"
+                    className="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
+                  />
                 </div>
                 <h3 className="text-2xl font-display mb-2">Chee-Ling</h3>
                 <p className="text-muted-foreground">STOTT Pilates Reformer Instructor</p>

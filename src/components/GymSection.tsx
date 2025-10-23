@@ -2,10 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Trophy, Check } from "lucide-react";
 import IMG4885 from "@/assets/IMG_4885.jpg";
-import IMG4907 from "@/assets/IMG_4907.jpg";
+import IMG4890 from "@/assets/IMG_4890.jpg";
 import IMG4922 from "@/assets/IMG_4922.jpg";
-import IMG4952 from "@/assets/IMG_4952.jpg";
 import IMG4982 from "@/assets/IMG_4982.jpg";
+import IMG5054 from "@/assets/IMG_5054.jpg";
+import JulienPhoto from "@/assets/Julien.webp";
+import AikoPhoto from "@/assets/aiko.webp";
+import LucienPhoto from "@/assets/lucien.webp";
+import NadiaPhoto from "@/assets/nadia.webp";
+import CaelumPhoto from "@/assets/caelum.webp";
 
 export const GymSection = () => {
   const scrollToIntake = () => {
@@ -73,11 +78,11 @@ export const GymSection = () => {
   ];
 
   const trainers = [
-    { name: "Julien", role: "Founder, Personal trainer" },
-    { name: "Aiko", role: "Personal trainer" },
-    { name: "Lucien", role: "Personal trainer" },
-    { name: "Nadia", role: "Personal trainer" },
-    { name: "Caelum", role: "Personal trainer" }
+    { name: "Julien", role: "Founder, Personal trainer", photo: JulienPhoto },
+    { name: "Aiko", role: "Personal trainer", photo: AikoPhoto },
+    { name: "Lucien", role: "Personal trainer", photo: LucienPhoto },
+    { name: "Nadia", role: "Personal trainer", photo: NadiaPhoto },
+    { name: "Caelum", role: "Personal trainer", photo: CaelumPhoto }
   ];
 
   const reviews = [
@@ -128,7 +133,7 @@ export const GymSection = () => {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="grid md:grid-cols-3 gap-6">
             <img 
-              src={IMG4907} 
+              src={IMG4890} 
               alt="HagueGym training sessie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
@@ -138,7 +143,7 @@ export const GymSection = () => {
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
             <img 
-              src={IMG4952} 
+              src={IMG5054} 
               alt="HagueGym locatie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
@@ -266,8 +271,15 @@ export const GymSection = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {trainers.map((trainer, index) => (
-              <Card key={index} className="p-6 bg-card border-border text-center">
-                <h4 className="font-bold mb-1">{trainer.name}</h4>
+              <Card key={index} className="p-6 bg-card border-border text-center hover:shadow-lg transition-all duration-300 group">
+                <div className="mb-4">
+                  <img 
+                    src={trainer.photo} 
+                    alt={trainer.name}
+                    className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h4 className="font-bold mb-1 text-foreground">{trainer.name}</h4>
                 <p className="text-sm text-muted-foreground">{trainer.role}</p>
               </Card>
             ))}

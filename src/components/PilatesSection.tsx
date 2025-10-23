@@ -17,6 +17,7 @@ import IMG4709 from "@/assets/IMG_4709.jpg";
 import IMG4711 from "@/assets/IMG_4711.jpg";
 import IMG4713 from "@/assets/IMG_4713.jpg";
 import IMG4714 from "@/assets/IMG_4714.jpg";
+import IMG4812 from "@/assets/IMG_4812.jpg";
 import IMG4769 from "@/assets/IMG_4769.jpg";
 import IMG4787 from "@/assets/IMG_4787.jpg";
 
@@ -189,20 +190,29 @@ export const PilatesSection = () => {
         <div className="max-w-4xl mx-auto mb-16">
           <Card className="p-8 bg-card border-border">
             <h3 className="text-2xl font-bold mb-6 text-center">Over Chee-Ling</h3>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                Tijdens mijn dansopleiding aan Codarts Rotterdam, maakte ik voor het eerste kennis met Pilates. 
-                Omdat ik merkte dat dit super goed voor je lichaam is, heb ik na de dansacademie gelijk mijn 
-                certificaat Mat Pilates behaald. In 2010 ben ik m'n eigen Dansstudio gestart in Oegstgeest.
-              </p>
-              <p>
-                Met veel plezier geef ik daar danslessen en mat pilates lessen. 2023 ben ik begonnen met de 
-                STOTT Pilates Reformer opleiding, om mij verder te scholen als All Round Pilates Instructor.
-              </p>
-              <p>
-                Ik heb ervaren dat mensen door Pilates hun lichaam versterken en een betere lichaamshouding krijgen. 
-                Omdat ik daar veel voldoening uit haal, ben ik in 2024 de HAGUEGYM Reformer Pilates studio gestart.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  Tijdens mijn dansopleiding aan Codarts Rotterdam, maakte ik voor het eerste kennis met Pilates. 
+                  Omdat ik merkte dat dit super goed voor je lichaam is, heb ik na de dansacademie gelijk mijn 
+                  certificaat Mat Pilates behaald. In 2010 ben ik m'n eigen Dansstudio gestart in Oegstgeest.
+                </p>
+                <p>
+                  Met veel plezier geef ik daar danslessen en mat pilates lessen. 2023 ben ik begonnen met de 
+                  STOTT Pilates Reformer opleiding, om mij verder te scholen als All Round Pilates Instructor.
+                </p>
+                <p>
+                  Ik heb ervaren dat mensen door Pilates hun lichaam versterken en een betere lichaamshouding krijgen. 
+                  Omdat ik daar veel voldoening uit haal, ben ik in 2024 de HAGUEGYM Reformer Pilates studio gestart.
+                </p>
+              </div>
+              <div className="hidden md:block">
+                <img 
+                  src={IMG4812} 
+                  alt="Chee-Ling Pilates instructeur"
+                  className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
           </Card>
         </div>

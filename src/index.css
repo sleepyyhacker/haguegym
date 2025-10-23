@@ -125,4 +125,17 @@ All colors MUST be HSL.
   .transition-bounce {
     transition: var(--transition-bounce);
   }
+
+  /* Hero slideshow animation */
+  @keyframes fadeInOut {
+    0%, 20% {
+      opacity: 1;
+    }
+    25%, 95% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
