@@ -2,7 +2,24 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles, Clock, Check } from "lucide-react";
 import reformerPilates from "@/assets/reformer-pilates.png";
-import gymInterior1 from "@/assets/gym-interior-1.jpg";
+import IMG4639 from "@/assets/IMG_4639.jpg";
+import IMG4647 from "@/assets/IMG_4647.jpg";
+import IMG4651 from "@/assets/IMG_4651.jpg";
+import IMG4655 from "@/assets/IMG_4655.jpg";
+import IMG4658 from "@/assets/IMG_4658.jpg";
+import IMG4664 from "@/assets/IMG_4664.jpg";
+import IMG4669 from "@/assets/IMG_4669.jpg";
+import IMG4671 from "@/assets/IMG_4671.jpg";
+import IMG4678 from "@/assets/IMG_4678.jpg";
+import IMG4685 from "@/assets/IMG_4685.jpg";
+import IMG4703 from "@/assets/IMG_4703.jpg";
+import IMG4709 from "@/assets/IMG_4709.jpg";
+import IMG4711 from "@/assets/IMG_4711.jpg";
+import IMG4713 from "@/assets/IMG_4713.jpg";
+import IMG4714 from "@/assets/IMG_4714.jpg";
+import IMG4769 from "@/assets/IMG_4769.jpg";
+import IMG4787 from "@/assets/IMG_4787.jpg";
+
 
 export const PilatesSection = () => {
   const benefits = [
@@ -16,15 +33,18 @@ export const PilatesSection = () => {
   const reformerFeatures = [
     {
       title: "Katrolsysteem",
-      description: "Een glijdende kar die zich beweegt door middel van een katrolsysteem, wat een combinatie biedt van weerstand en ondersteuning voor het lichaam."
+      description: "Een glijdende kar die zich beweegt door middel van een katrolsysteem, wat een combinatie biedt van weerstand en ondersteuning voor het lichaam.",
+      image: IMG4655
     },
     {
       title: "Veren",
-      description: "De Reformer gebruikt veren (springs) om verschillende mate van spanning en weerstand te creëren. Dit helpt om de spieren tegelijkertijd te versterken en te verlengen."
+      description: "De Reformer gebruikt veren (springs) om verschillende mate van spanning en weerstand te creëren. Dit helpt om de spieren tegelijkertijd te versterken en te verlengen.",
+      image: IMG4769
     },
     {
       title: "Posities",
-      description: "Werken op de Reformer geeft de meest geweldige mogelijkheden om je mobiliteit en stabiliteit in evenwicht te brengen in allerlei verschillende posities."
+      description: "Werken op de Reformer geeft de meest geweldige mogelijkheden om je mobiliteit en stabiliteit in evenwicht te brengen in allerlei verschillende posities.",
+      image: IMG4787
     }
   ];
 
@@ -108,13 +128,14 @@ export const PilatesSection = () => {
                 className="absolute left-0 top-0 w-3/5 h-[350px] object-cover rounded-2xl shadow-2xl z-10"
               />
               <img 
-                src={gymInterior1}
+                src={IMG4647}
                 alt="Pilates studio interieur"
                 className="absolute right-0 bottom-0 w-3/5 h-[350px] object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </div>
         </div>
+
 
         {/* Reformer Features */}
         <div className="relative -mx-4 sm:-mx-6 lg:-mx-8 xl:-mx-[calc((100vw-1280px)/2)] px-4 sm:px-6 lg:px-8 py-20 mb-16 bg-zinc-800 overflow-hidden transition-all duration-1000">
@@ -148,8 +169,12 @@ export const PilatesSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative z-10">
-                    <div className="inline-block p-3 rounded-xl bg-gradient-to-br from-accent/10 to-primary/10 mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Sparkles className="w-6 h-6 text-accent" />
+                    <div className="mb-6 group-hover:scale-105 transition-transform duration-300">
+                      <img 
+                        src={feature.image} 
+                        alt={feature.title}
+                        className="w-full h-48 object-cover rounded-xl shadow-lg"
+                      />
                     </div>
                     <h4 className="text-xl font-bold mb-3 text-foreground group-hover:text-accent transition-colors duration-300">{feature.title}</h4>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>

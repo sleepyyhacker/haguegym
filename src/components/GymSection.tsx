@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Trophy, Check } from "lucide-react";
-import gymTraining from "@/assets/gym-training.jpg";
-import gymInterior2 from "@/assets/gym-interior-2.jpg";
-import fitnessHub from "@/assets/fitness-hub.png";
-import gymExterior from "@/assets/gym-exterior.webp";
-import gymBw from "@/assets/gym-bw.avif";
+import IMG4885 from "@/assets/IMG_4885.jpg";
+import IMG4907 from "@/assets/IMG_4907.jpg";
+import IMG4922 from "@/assets/IMG_4922.jpg";
+import IMG4952 from "@/assets/IMG_4952.jpg";
+import IMG4982 from "@/assets/IMG_4982.jpg";
 
 export const GymSection = () => {
   const scrollToIntake = () => {
@@ -126,19 +126,19 @@ export const GymSection = () => {
 
         {/* Image gallery */}
         <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <img 
-              src={gymTraining} 
+              src={IMG4907} 
               alt="HagueGym training sessie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
             <img 
-              src={fitnessHub} 
+              src={IMG4922} 
               alt="HagueGym Fitness Hub" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
             <img 
-              src={gymExterior} 
+              src={IMG4952} 
               alt="HagueGym locatie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
@@ -176,7 +176,7 @@ export const GymSection = () => {
               </div>
             </div>
             <img 
-              src={gymBw}
+              src={IMG4982}
               alt="HagueGym trainingsruimte"
               className="w-full h-full min-h-[300px] object-cover rounded-xl shadow-elegant grayscale hover:grayscale-0 transition-all duration-500"
             />

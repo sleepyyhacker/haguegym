@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import gymTraining from "@/assets/gym-training.jpg";
+import IMG5012 from "@/assets/IMG_5012.jpg";
+import IMG5025 from "@/assets/IMG_5025.jpg";
+import IMG5051 from "@/assets/IMG_5051.jpg";
+import IMG4721 from "@/assets/IMG_4721.jpg";
+import IMG4886 from "@/assets/IMG_4886.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -8,17 +12,33 @@ export const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const backgroundImages = [
+    IMG5012,
+    IMG5025,
+    IMG5051,
+    IMG4721,
+    IMG4886
+  ];
+
   return (
     <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${gymTraining})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      {/* Dynamic Background Images */}
+      <div className="absolute inset-0 z-0">
+        {backgroundImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-2000 ${
+              index === 0 ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              animationDelay: `${index * 3}s`,
+              animation: `fadeInOut 15s infinite ${index * 3}s`
+            }}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-background/20" />
       </div>
 
