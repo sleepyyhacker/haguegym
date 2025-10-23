@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Test</title>
+    <title>Image Test - HagueGym</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .status { font-weight: bold; }
+        .success { color: green; }
+        .error { color: red; }
+        img { max-width: 200px; margin: 10px; border: 1px solid #ddd; }
+    </style>
 </head>
 <body>
-    <h1>Image Path Test</h1>
-    <p>Testing if images load correctly:</p>
+    <h1>🔍 HagueGym Image Diagnostic Test</h1>
+    <p>This page tests if images are loading correctly from the public folder.</p>
     
-    <h2>Logo Test:</h2>
-    <img src="/images/new-logo.png" alt="Logo Test" style="max-width: 200px;">
+    <div class="test-section">
+        <h2>📋 Test Results:</h2>
+        <div id="results"></div>
+    </div>
     
-    <h2>Sample Image Test:</h2>
-    <img src="/images/IMG_4907.jpg" alt="Sample Image Test" style="max-width: 200px;">
+    <div class="test-section">
+        <h2>🖼️ Image Tests:</h2>
+        
+        <h3>Logo Test:</h3>
+        <img src="/images/new-logo.png" alt="Logo Test" id="logo-test">
+        <div id="logo-status"></div>
+        
+        <h3>Sample Image Test:</h3>
+        <img src="/images/IMG_4907.jpg" alt="Sample Image Test" id="sample-test">
+        <div id="sample-status"></div>
+        
+        <h3>Trainer Photo Test:</h3>
+        <img src="/images/Julien.webp" alt="Trainer Test" id="trainer-test">
+        <div id="trainer-status"></div>
+        
+        <h3>Background Image Test:</h3>
+        <img src="/images/hero-bg.jpg" alt="Background Test" id="bg-test">
+        <div id="bg-status"></div>
+    </div>
     
-    <h2>Trainer Photo Test:</h2>
-    <img src="/images/Julien.webp" alt="Trainer Test" style="max-width: 200px;">
+    <div class="test-section">
+        <h2>🔗 Direct URL Tests:</h2>
+        <p>Try these URLs directly in your browser:</p>
+        <ul>
+            <li><a href="/images/new-logo.png" target="_blank">/images/new-logo.png</a></li>
+            <li><a href="/images/IMG_4907.jpg" target="_blank">/images/IMG_4907.jpg</a></li>
+            <li><a href="/images/Julien.webp" target="_blank">/images/Julien.webp</a></li>
+        </ul>
+    </div>
     
     <script>
-        // Test if images load
-        const images = document.querySelectorAll('img');
-        images.forEach((img, index) => {
-            img.onload = () => console.log(`Image ${index + 1} loaded successfully`);
-            img.onerror = () => console.error(`Image ${index + 1} failed to load:`, img.src);
-        });
+        const results = document.getElementById('results');
+        let passedTests = 0;
+        let totalTests = 0;
+        
+        function testImage(imgId, statusId, imageName) {
+            totalTests++;
+            const img = document.getElementById(imgId);
+            const status = document.getElementById(statusId);
+            
+            img.onload = () => {
+                status.innerHTML = `<span class="status success">✅ ${imageName} loaded successfully</span>`;
+                passedTests++;
+                updateResults();
+            };
+            
+            img.onerror = () => {
+                status.innerHTML = `<span class="status error">❌ ${imageName} failed to load</span>`;
+                updateResults();
+            };
+        }
+        
+        function updateResults() {
+            results.innerHTML = `
+                <p><strong>Tests Passed:</strong> ${passedTests}/${totalTests}</p>
+                <p><strong>Status:</strong> ${passedTests === totalTests ? 
+                    '<span class="success">All images working! 🎉</span>' : 
+                    '<span class="error">Some images failed! 🔧</span>'}
+                </p>
+            `;
+        }
+        
+        // Test all images
+        testImage('logo-test', 'logo-status', 'Logo');
+        testImage('sample-test', 'sample-status', 'Sample Image');
+        testImage('trainer-test', 'trainer-status', 'Trainer Photo');
+        testImage('bg-test', 'bg-status', 'Background Image');
     </script>
 </body>
 </html>
