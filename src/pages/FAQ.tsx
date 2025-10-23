@@ -9,11 +9,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle, ArrowRight, MessageCircle } from "lucide-react";
-import IMG4907 from "@/assets/IMG_4907.jpg";
-import IMG4922 from "@/assets/IMG_4922.jpg";
-import IMG4952 from "@/assets/IMG_4952.jpg";
-import IMG4982 from "@/assets/IMG_4982.jpg";
-import IMG5000 from "@/assets/IMG_5000.jpg";
 
 const FAQ = () => {
   const scrollToSection = (id: string) => {
@@ -140,7 +135,7 @@ const FAQ = () => {
         <div 
           className="absolute inset-0"
         style={{
-          backgroundImage: `url(${IMG4952})`,
+          backgroundImage: `url(/images/IMG_4952.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

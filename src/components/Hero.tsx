@@ -1,10 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import IMG5012 from "@/assets/IMG_5012.jpg";
-import IMG5025 from "@/assets/IMG_5025.jpg";
-import IMG5051 from "@/assets/IMG_5051.jpg";
-import IMG4721 from "@/assets/IMG_4721.jpg";
-import IMG4886 from "@/assets/IMG_4886.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -13,11 +8,11 @@ export const Hero = () => {
   };
 
   const backgroundImages = [
-    IMG5012,
-    IMG5025,
-    IMG5051,
-    IMG4721,
-    IMG4886
+    "/images/IMG_5012.jpg",
+    "/images/IMG_5025.jpg",
+    "/images/IMG_5051.jpg",
+    "/images/IMG_4721.jpg",
+    "/images/IMG_4886.jpg"
   ];
 
   return (

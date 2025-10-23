@@ -2,16 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Trophy, Check } from "lucide-react";
 import { Tour360 } from "@/components/360Tour";
-import IMG4885 from "@/assets/IMG_4885.jpg";
-import IMG4890 from "@/assets/IMG_4890.jpg";
-import IMG4922 from "@/assets/IMG_4922.jpg";
-import IMG4982 from "@/assets/IMG_4982.jpg";
-import IMG5054 from "@/assets/IMG_5054.jpg";
-import JulienPhoto from "@/assets/Julien.webp";
-import AikoPhoto from "@/assets/aiko.webp";
-import LucienPhoto from "@/assets/lucien.webp";
-import NadiaPhoto from "@/assets/nadia.webp";
-import CaelumPhoto from "@/assets/caelum.webp";
 
 export const GymSection = () => {
   const scrollToIntake = () => {
@@ -79,11 +69,11 @@ export const GymSection = () => {
   ];
 
   const trainers = [
-    { name: "Julien", role: "Founder, Personal trainer", photo: JulienPhoto },
-    { name: "Aiko", role: "Personal trainer", photo: AikoPhoto },
-    { name: "Lucien", role: "Personal trainer", photo: LucienPhoto },
-    { name: "Nadia", role: "Personal trainer", photo: NadiaPhoto },
-    { name: "Caelum", role: "Personal trainer", photo: CaelumPhoto }
+    { name: "Julien", role: "Founder, Personal trainer", photo: "/images/Julien.webp" },
+    { name: "Aiko", role: "Personal trainer", photo: "/images/aiko.webp" },
+    { name: "Lucien", role: "Personal trainer", photo: "/images/lucien.webp" },
+    { name: "Nadia", role: "Personal trainer", photo: "/images/nadia.webp" },
+    { name: "Caelum", role: "Personal trainer", photo: "/images/caelum.webp" }
   ];
 
   const reviews = [
@@ -134,17 +124,17 @@ export const GymSection = () => {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <img 
-              src={IMG4890} 
+              src="/images/IMG_4890.jpg" 
               alt="HagueGym training sessie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
             <img 
-              src={IMG4922} 
+              src="/images/IMG_4922.jpg" 
               alt="HagueGym Fitness Hub" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
             <img 
-              src={IMG5054} 
+              src="/images/IMG_5054.jpg" 
               alt="HagueGym locatie" 
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
@@ -201,7 +191,7 @@ export const GymSection = () => {
               </div>
             </div>
             <img 
-              src={IMG4982}
+              src="/images/IMG_4982.jpg"
               alt="HagueGym trainingsruimte"
               className="w-full h-full min-h-[300px] object-cover rounded-xl shadow-elegant grayscale hover:grayscale-0 transition-all duration-500"
             />

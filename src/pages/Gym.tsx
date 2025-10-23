@@ -6,27 +6,6 @@ import { Tour360 } from "@/components/360Tour";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Dumbbell, Clock, Users, Star, CheckCircle, MapPin, Phone, Mail } from "lucide-react";
-import IMG4885 from "@/assets/IMG_4885.jpg";
-import IMG4890 from "@/assets/IMG_4890.jpg";
-import IMG4907 from "@/assets/IMG_4907.jpg";
-import IMG4922 from "@/assets/IMG_4922.jpg";
-import IMG4936 from "@/assets/IMG_4936.jpg";
-import IMG4952 from "@/assets/IMG_4952.jpg";
-import IMG4966 from "@/assets/IMG_4966.jpg";
-import IMG4982 from "@/assets/IMG_4982.jpg";
-import IMG5000 from "@/assets/IMG_5000.jpg";
-import IMG5017 from "@/assets/IMG_5017.jpg";
-import IMG5039 from "@/assets/IMG_5039.jpg";
-import IMG5058 from "@/assets/IMG_5058.jpg";
-import IMG5075 from "@/assets/IMG_5075.jpg";
-import IMG5090 from "@/assets/IMG_5090.jpg";
-import IMG5093 from "@/assets/IMG_5093.jpg";
-import IMG5094 from "@/assets/IMG_5094.jpg";
-import JulienPhoto from "@/assets/Julien.webp";
-import AikoPhoto from "@/assets/aiko.webp";
-import LucienPhoto from "@/assets/lucien.webp";
-import NadiaPhoto from "@/assets/nadia.webp";
-import CaelumPhoto from "@/assets/caelum.webp";
 
 const Gym = () => {
   const scrollToSection = (id: string) => {
@@ -156,7 +135,7 @@ const Gym = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={IMG4907} 
+                  src="/images/IMG_4907.jpg" 
                   alt="Gym Interior" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -166,14 +145,14 @@ const Gym = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative order-2 md:order-1">
                 <img 
-                  src={IMG4922} 
+                  src="/images/IMG_4922.jpg" 
                   alt="Gym Training" 
                   className="rounded-2xl shadow-2xl"
                 />
                 {/* Personal training image */}
                 <div className="absolute -top-6 -left-6 w-24 h-24">
                   <img 
-                    src={IMG4936} 
+                    src="/images/IMG_4936.jpg" 
                     alt="Personal Training" 
                     className="w-full h-full object-cover rounded-xl shadow-lg"
                   />
@@ -360,7 +339,7 @@ const Gym = () => {
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <img 
-                      src={JulienPhoto} 
+                      src="/images/Julien.webp" 
                       alt="Julien"
                       className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
                     />
@@ -374,7 +353,7 @@ const Gym = () => {
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <img 
-                      src={AikoPhoto} 
+                      src="/images/aiko.webp" 
                       alt="Aiko"
                       className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
                     />
@@ -388,7 +367,7 @@ const Gym = () => {
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <img 
-                      src={LucienPhoto} 
+                      src="/images/lucien.webp" 
                       alt="Lucien"
                       className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
                     />
@@ -402,7 +381,7 @@ const Gym = () => {
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <img 
-                      src={NadiaPhoto} 
+                      src="/images/nadia.webp" 
                       alt="Nadia"
                       className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
                     />
@@ -416,7 +395,7 @@ const Gym = () => {
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <img 
-                      src={CaelumPhoto} 
+                      src="/images/caelum.webp" 
                       alt="Caelum"
                       className="w-20 h-20 rounded-full mx-auto object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
                     />
@@ -508,7 +487,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Efficiënte training die past in jouw drukke schema.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4952} 
+                    src="/images/IMG_4952.jpg" 
                     alt="Efficient Training" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
@@ -523,7 +502,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Geoptimaliseerd circuit voor maximale resultaten.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4966} 
+                    src="/images/IMG_4966.jpg" 
                     alt="Circuit Training" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
@@ -538,7 +517,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Kleine groepen zorgen voor persoonlijke aandacht.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4982} 
+                    src="/images/IMG_4982.jpg" 
                     alt="Small Groups" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
@@ -553,7 +532,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Iedereen is welkom, ongeacht ervaringsniveau.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG5000} 
+                    src="/images/IMG_5000.jpg" 
                     alt="All Levels" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
@@ -568,7 +547,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Veilige apparatuur en professionele begeleiding.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG5017} 
+                    src="/images/IMG_5017.jpg" 
                     alt="Safe Training" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
@@ -583,7 +562,7 @@ const Gym = () => {
                 <p className="text-muted-foreground">Flexibele tijden die passen bij jouw agenda.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG5039} 
+                    src="/images/IMG_5039.jpg" 
                     alt="Flexible Scheduling" 
                     className="w-full h-48 object-cover rounded-lg shadow-md"
                   />

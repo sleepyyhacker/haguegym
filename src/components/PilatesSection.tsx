@@ -2,25 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles, Clock, Check } from "lucide-react";
 import { Tour360 } from "@/components/360Tour";
-import reformerPilates from "@/assets/reformer-pilates.png";
-import IMG4639 from "@/assets/IMG_4639.jpg";
-import IMG4647 from "@/assets/IMG_4647.jpg";
-import IMG4651 from "@/assets/IMG_4651.jpg";
-import IMG4655 from "@/assets/IMG_4655.jpg";
-import IMG4658 from "@/assets/IMG_4658.jpg";
-import IMG4664 from "@/assets/IMG_4664.jpg";
-import IMG4669 from "@/assets/IMG_4669.jpg";
-import IMG4671 from "@/assets/IMG_4671.jpg";
-import IMG4678 from "@/assets/IMG_4678.jpg";
-import IMG4685 from "@/assets/IMG_4685.jpg";
-import IMG4703 from "@/assets/IMG_4703.jpg";
-import IMG4709 from "@/assets/IMG_4709.jpg";
-import IMG4711 from "@/assets/IMG_4711.jpg";
-import IMG4713 from "@/assets/IMG_4713.jpg";
-import IMG4714 from "@/assets/IMG_4714.jpg";
-import IMG4812 from "@/assets/IMG_4812.jpg";
-import IMG4769 from "@/assets/IMG_4769.jpg";
-import IMG4787 from "@/assets/IMG_4787.jpg";
 
 
 export const PilatesSection = () => {
@@ -36,17 +17,17 @@ export const PilatesSection = () => {
     {
       title: "Katrolsysteem",
       description: "Een glijdende kar die zich beweegt door middel van een katrolsysteem, wat een combinatie biedt van weerstand en ondersteuning voor het lichaam.",
-      image: IMG4655
+      image: "/images/IMG_4655.jpg"
     },
     {
       title: "Veren",
       description: "De Reformer gebruikt veren (springs) om verschillende mate van spanning en weerstand te creëren. Dit helpt om de spieren tegelijkertijd te versterken en te verlengen.",
-      image: IMG4769
+      image: "/images/IMG_4769.jpg"
     },
     {
       title: "Posities",
       description: "Werken op de Reformer geeft de meest geweldige mogelijkheden om je mobiliteit en stabiliteit in evenwicht te brengen in allerlei verschillende posities.",
-      image: IMG4787
+      image: "/images/IMG_4787.jpg"
     }
   ];
 
@@ -125,12 +106,12 @@ export const PilatesSection = () => {
             </div>
             <div className="relative h-[500px] hidden md:block">
               <img 
-                src={reformerPilates}
+                src="/images/reformer-pilates.png"
                 alt="Reformer Pilates apparatuur"
                 className="absolute left-0 top-0 w-3/5 h-[350px] object-cover rounded-2xl shadow-2xl z-10"
               />
               <img 
-                src={IMG4647}
+                src="/images/IMG_4647.jpg"
                 alt="Pilates studio interieur"
                 className="absolute right-0 bottom-0 w-3/5 h-[350px] object-cover rounded-2xl shadow-2xl"
               />
@@ -230,7 +211,7 @@ export const PilatesSection = () => {
               </div>
               <div className="hidden md:block">
                 <img 
-                  src={IMG4812} 
+                  src="/images/IMG_4812.jpg" 
                   alt="Chee-Ling Pilates instructeur"
                   className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
                 />

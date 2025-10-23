@@ -6,25 +6,6 @@ import { Tour360 } from "@/components/360Tour";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Heart, Users, Clock, Star, CheckCircle, MapPin, Phone, Mail } from "lucide-react";
-import reformerPilates from "@/assets/reformer-pilates.png";
-import IMG4639 from "@/assets/IMG_4639.jpg";
-import IMG4647 from "@/assets/IMG_4647.jpg";
-import IMG4651 from "@/assets/IMG_4651.jpg";
-import IMG4655 from "@/assets/IMG_4655.jpg";
-import IMG4658 from "@/assets/IMG_4658.jpg";
-import IMG4664 from "@/assets/IMG_4664.jpg";
-import IMG4669 from "@/assets/IMG_4669.jpg";
-import IMG4671 from "@/assets/IMG_4671.jpg";
-import IMG4678 from "@/assets/IMG_4678.jpg";
-import IMG4685 from "@/assets/IMG_4685.jpg";
-import IMG4703 from "@/assets/IMG_4703.jpg";
-import IMG4709 from "@/assets/IMG_4709.jpg";
-import IMG4711 from "@/assets/IMG_4711.jpg";
-import IMG4713 from "@/assets/IMG_4713.jpg";
-import IMG4714 from "@/assets/IMG_4714.jpg";
-import IMG4769 from "@/assets/IMG_4769.jpg";
-import IMG4787 from "@/assets/IMG_4787.jpg";
-import IMG4812 from "@/assets/IMG_4812.jpg";
 
 const Pilates = () => {
   const scrollToSection = (id: string) => {
@@ -182,7 +163,7 @@ const Pilates = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={reformerPilates} 
+                  src="/images/reformer-pilates.png" 
                   alt="Reformer Pilates" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -412,7 +393,7 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4655} 
+                      src="/images/IMG_4655.jpg" 
                       alt="Katrolsysteem" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
@@ -428,7 +409,7 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4769} 
+                      src="/images/IMG_4769.jpg" 
                       alt="Veren" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
@@ -444,7 +425,7 @@ const Pilates = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <img 
-                      src={IMG4787} 
+                      src="/images/IMG_4787.jpg" 
                       alt="Posities" 
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
@@ -487,7 +468,7 @@ const Pilates = () => {
               <div className="text-center">
                 <div className="mb-6">
                   <img 
-                    src={IMG4812} 
+                    src="/images/IMG_4812.jpg" 
                     alt="Chee-Ling Pilates instructeur"
                     className="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
                   />
@@ -520,7 +501,7 @@ const Pilates = () => {
                 <p className="text-muted-foreground mb-4">Verhoog je lichaamsbewustzijn en mentale focus.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4664} 
+                    src="/images/IMG_4664.jpg" 
                     alt="Body Awareness" 
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />
@@ -535,7 +516,7 @@ const Pilates = () => {
                 <p className="text-muted-foreground mb-4">Versterk je hele lichaam op een veilige manier.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4669} 
+                    src="/images/IMG_4669.jpg" 
                     alt="Muscle Strength" 
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />
@@ -550,7 +531,7 @@ const Pilates = () => {
                 <p className="text-muted-foreground mb-4">Ontwikkel betere lichaamscontrole en beheersing.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4671} 
+                    src="/images/IMG_4671.jpg" 
                     alt="Coordination" 
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />
@@ -565,7 +546,7 @@ const Pilates = () => {
                 <p className="text-muted-foreground mb-4">Bouw kracht op in je hele lichaam.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4678} 
+                    src="/images/IMG_4678.jpg" 
                     alt="Body Strength" 
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />
@@ -580,7 +561,7 @@ const Pilates = () => {
                 <p className="text-muted-foreground mb-4">Verbeter je houding en verminder pijn.</p>
                 <div className="mt-4">
                   <img 
-                    src={IMG4685} 
+                    src="/images/IMG_4685.jpg" 
                     alt="Posture Improvement" 
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />

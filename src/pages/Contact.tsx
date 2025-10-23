@@ -7,11 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, MapPin, Phone, Mail, Clock, MessageCircle, Calendar } from "lucide-react";
-import IMG4907 from "@/assets/IMG_4907.jpg";
-import IMG4922 from "@/assets/IMG_4922.jpg";
-import IMG4952 from "@/assets/IMG_4952.jpg";
-import IMG4982 from "@/assets/IMG_4982.jpg";
-import IMG5000 from "@/assets/IMG_5000.jpg";
 
 const Contact = () => {
   const scrollToSection = (id: string) => {
@@ -30,7 +25,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0"
         style={{
-          backgroundImage: `url(${IMG4922})`,
+          backgroundImage: `url(/images/IMG_4922.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

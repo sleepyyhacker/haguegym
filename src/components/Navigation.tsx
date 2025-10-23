@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "@/assets/new-logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +39,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link to="/" onClick={() => handleNavigation('/')} className="flex items-center gap-2 cursor-pointer">
-            <img src={logo} alt="HagueGym Logo" className="h-10 w-auto object-contain object-center brightness-0 invert" style={{ marginTop: '12px' }} />
+            <img src="/images/new-logo.png" alt="HagueGym Logo" className="h-10 w-auto object-contain object-center brightness-0 invert" style={{ marginTop: '12px' }} />
           </Link>
 
           {/* Desktop Navigation */}
