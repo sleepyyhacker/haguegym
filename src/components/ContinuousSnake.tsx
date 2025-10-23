@@ -9,11 +9,11 @@ export const ContinuousSnake = () => {
         preserveAspectRatio="none"
       >
         <defs>
-          <linearGradient id="snakeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.4" />
-            <stop offset="50%" stopColor="#60A5FA" stopOpacity="0.25" />
-            <stop offset="100%" stopColor="#93C5FD" stopOpacity="0.15" />
-          </linearGradient>
+        <linearGradient id="snakeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stopColor="#006400" stopOpacity="0.4" />   {/* Donkergroen */}
+  <stop offset="50%" stopColor="#228B22" stopOpacity="0.25" /> {/* Forest green */}
+  <stop offset="100%" stopColor="#6B8E23" stopOpacity="0.15" />{/* Olijfgroen */}
+</linearGradient>
           <linearGradient id="snakeYellow" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#EAB308" stopOpacity="0.35" />
             <stop offset="50%" stopColor="#FCD34D" stopOpacity="0.2" />

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Trophy, Check } from "lucide-react";
+import { Tour360 } from "@/components/360Tour";
 import IMG4885 from "@/assets/IMG_4885.jpg";
 import IMG4890 from "@/assets/IMG_4890.jpg";
 import IMG4922 from "@/assets/IMG_4922.jpg";
@@ -129,9 +130,9 @@ export const GymSection = () => {
           </p>
         </div>
 
-        {/* Image gallery */}
+        {/* Image gallery and 360 Tour */}
         <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <img 
               src={IMG4890} 
               alt="HagueGym training sessie" 
@@ -148,6 +149,25 @@ export const GymSection = () => {
               className="w-full h-[350px] object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all duration-500"
             />
           </div>
+          
+          {/* 360 Tour Section */}
+          <div className="text-center mb-8">
+            <div className="inline-block relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-2xl blur-xl opacity-50"></div>
+              <div className="relative bg-white px-8 py-4 rounded-2xl border-2 border-primary/10 shadow-elegant">
+                <h3 className="text-2xl font-bold text-foreground">Ontdek onze gym in 360°</h3>
+                <p className="text-muted-foreground mt-2">Bekijk onze faciliteiten van alle kanten</p>
+              </div>
+            </div>
+          </div>
+          
+          <Tour360
+            tourId="9lBwT7-pZ"
+            title="HagueGym 360° Tour"
+            description="Bekijk onze moderne gym met alle faciliteiten"
+            height="500px"
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
         {/* Features */}

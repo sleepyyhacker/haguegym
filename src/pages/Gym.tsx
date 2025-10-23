@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ContinuousSnake } from "@/components/ContinuousSnake";
 import { IntakeSection } from "@/components/IntakeSection";
+import { Tour360 } from "@/components/360Tour";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Dumbbell, Clock, Users, Star, CheckCircle, MapPin, Phone, Mail } from "lucide-react";
@@ -108,6 +109,27 @@ const Gym = () => {
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Alles wat je nodig hebt voor een complete workout in één moderne ruimte.
               </p>
+            </div>
+
+            {/* 360 Tour Section */}
+            <div className="mb-20">
+              <div className="text-center mb-8">
+                <div className="inline-block relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-2xl blur-xl opacity-50"></div>
+                  <div className="relative bg-white px-8 py-4 rounded-2xl border-2 border-primary/10 shadow-elegant">
+                    <h3 className="text-2xl font-bold text-foreground">Ontdek onze gym in 360°</h3>
+                    <p className="text-muted-foreground mt-2">Bekijk onze faciliteiten van alle kanten</p>
+                  </div>
+                </div>
+              </div>
+              
+              <Tour360
+                tourId="9lBwT7-pZ"
+                title="HagueGym 360° Tour"
+                description="Bekijk onze moderne gym met alle faciliteiten"
+                height="600px"
+                className="max-w-5xl mx-auto"
+              />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">

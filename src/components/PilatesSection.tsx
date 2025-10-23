@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles, Clock, Check } from "lucide-react";
+import { Tour360 } from "@/components/360Tour";
 import reformerPilates from "@/assets/reformer-pilates.png";
 import IMG4639 from "@/assets/IMG_4639.jpg";
 import IMG4647 from "@/assets/IMG_4647.jpg";
@@ -135,6 +136,27 @@ export const PilatesSection = () => {
               />
             </div>
           </div>
+        </div>
+
+        {/* 360 Tour Section */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="text-center mb-8">
+            <div className="inline-block relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-2xl blur-xl opacity-50"></div>
+              <div className="relative bg-white px-8 py-4 rounded-2xl border-2 border-accent/10 shadow-elegant">
+                <h3 className="text-2xl font-bold text-foreground">Ontdek onze Pilates studio in 360°</h3>
+                <p className="text-muted-foreground mt-2">Bekijk onze Reformer Pilates faciliteiten</p>
+              </div>
+            </div>
+          </div>
+          
+          <Tour360
+            tourId="7nNYmwbNL"
+            title="Pilates Studio 360° Tour"
+            description="Bekijk onze Reformer Pilates studio en apparatuur"
+            height="500px"
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
 

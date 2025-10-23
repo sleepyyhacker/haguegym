@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ContinuousSnake } from "@/components/ContinuousSnake";
 import { IntakeSection } from "@/components/IntakeSection";
+import { Tour360 } from "@/components/360Tour";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Heart, Users, Clock, Star, CheckCircle, MapPin, Phone, Mail } from "lucide-react";
@@ -106,6 +107,27 @@ const Pilates = () => {
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Reformer Pilates biedt unieke voordelen die je niet vindt bij traditionele workouts.
               </p>
+            </div>
+
+            {/* 360 Tour Section */}
+            <div className="mb-20">
+              <div className="text-center mb-8">
+                <div className="inline-block relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-2xl blur-xl opacity-50"></div>
+                  <div className="relative bg-white px-8 py-4 rounded-2xl border-2 border-accent/10 shadow-elegant">
+                    <h3 className="text-2xl font-bold text-foreground">Ontdek onze Pilates studio in 360°</h3>
+                    <p className="text-muted-foreground mt-2">Bekijk onze Reformer Pilates faciliteiten</p>
+                  </div>
+                </div>
+              </div>
+              
+              <Tour360
+                tourId="7nNYmwbNL"
+                title="Pilates Studio 360° Tour"
+                description="Bekijk onze Reformer Pilates studio en apparatuur"
+                height="600px"
+                className="max-w-5xl mx-auto"
+              />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -344,8 +366,8 @@ const Pilates = () => {
                 </div>
               </Card>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
-              <Card className="relative p-8 bg-gradient-to-br from-white via-white to-accent/5 border-2 border-accent/10 hover:border-accent/30 shadow-elegant hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500 rounded-3xl overflow-hidden group">
+            <div className="flex justify-center gap-6 mt-6">
+              <Card className="relative p-8 bg-gradient-to-br from-white via-white to-accent/5 border-2 border-accent/10 hover:border-accent/30 shadow-elegant hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500 rounded-3xl overflow-hidden group max-w-sm">
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
                 <div className="relative z-10">
                   <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-accent/10 to-primary/10 rounded-full mb-3">
@@ -357,7 +379,7 @@ const Pilates = () => {
                   </div>
                 </div>
               </Card>
-              <Card className="relative p-8 bg-gradient-to-br from-white via-white to-primary/5 border-2 border-primary/10 hover:border-primary/30 shadow-elegant hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 rounded-3xl overflow-hidden group">
+              <Card className="relative p-8 bg-gradient-to-br from-white via-white to-primary/5 border-2 border-primary/10 hover:border-primary/30 shadow-elegant hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 rounded-3xl overflow-hidden group max-w-sm">
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
                 <div className="relative z-10">
                   <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full mb-3">
@@ -495,7 +517,7 @@ const Pilates = () => {
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Bewustzijn van je Lichaam en Geest</h3>
-                <p className="text-muted-foreground">Verhoog je lichaamsbewustzijn en mentale focus.</p>
+                <p className="text-muted-foreground mb-4">Verhoog je lichaamsbewustzijn en mentale focus.</p>
                 <div className="mt-4">
                   <img 
                     src={IMG4664} 
@@ -510,7 +532,7 @@ const Pilates = () => {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Verbetering van je Spierkracht</h3>
-                <p className="text-muted-foreground">Versterk je hele lichaam op een veilige manier.</p>
+                <p className="text-muted-foreground mb-4">Versterk je hele lichaam op een veilige manier.</p>
                 <div className="mt-4">
                   <img 
                     src={IMG4669} 
@@ -525,7 +547,7 @@ const Pilates = () => {
                   <CheckCircle className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Verbeteren van Coördinatie</h3>
-                <p className="text-muted-foreground">Ontwikkel betere lichaamscontrole en beheersing.</p>
+                <p className="text-muted-foreground mb-4">Ontwikkel betere lichaamscontrole en beheersing.</p>
                 <div className="mt-4">
                   <img 
                     src={IMG4671} 
@@ -540,7 +562,7 @@ const Pilates = () => {
                   <Star className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Versterken van je Lichaam</h3>
-                <p className="text-muted-foreground">Bouw kracht op in je hele lichaam.</p>
+                <p className="text-muted-foreground mb-4">Bouw kracht op in je hele lichaam.</p>
                 <div className="mt-4">
                   <img 
                     src={IMG4678} 
@@ -555,7 +577,7 @@ const Pilates = () => {
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Minder Nek, Hoofd en Rugklachten</h3>
-                <p className="text-muted-foreground">Verbeter je houding en verminder pijn.</p>
+                <p className="text-muted-foreground mb-4">Verbeter je houding en verminder pijn.</p>
                 <div className="mt-4">
                   <img 
                     src={IMG4685} 
