@@ -24,7 +24,7 @@ const Gym = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${IMG4907})`,
+            backgroundImage: `url(/images/IMG_4907.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

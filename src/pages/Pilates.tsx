@@ -24,7 +24,7 @@ const Pilates = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${reformerPilates})`,
+            backgroundImage: `url(/images/IMG_4721.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
