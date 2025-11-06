@@ -63,7 +63,7 @@ const Gym = () => {
                   size="lg"
                   className="bg-accent text-white hover:bg-accent/90 font-semibold shadow-lg hover:shadow-xl transition-all relative z-20"
                 >
-                  Gratis Proefles
+                  Gratis Intake
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

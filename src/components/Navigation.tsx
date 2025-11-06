@@ -61,7 +61,7 @@ export const Navigation = () => {
               <Button 
                 className="font-semibold h-9 px-5 text-sm"
               >
-                Gratis Proefles
+                Gratis Intake
               </Button>
             </Link>
           </div>
@@ -92,7 +92,7 @@ export const Navigation = () => {
             <div className="px-4 mt-4">
               <Link to="/contact" onClick={() => handleNavigation('/contact')}>
                 <Button className="w-full">
-                  Gratis Proefles
+                  Gratis Intake
                 </Button>
               </Link>
             </div>

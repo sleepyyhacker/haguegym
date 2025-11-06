@@ -216,7 +216,7 @@ const FAQ = () => {
                 variant="outline"
                 className="border-2 border-primary/30 bg-primary/10 backdrop-blur-sm text-foreground hover:bg-primary/20 hover:border-primary/50 font-semibold shadow-lg hover:shadow-xl transition-all relative z-20"
               >
-                Gratis Proefles
+                Gratis Intake
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
